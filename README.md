@@ -1,7 +1,7 @@
 # cms2cmd
-**cms2cmd** is a a very simple command execution plugin for various CMS systems. Current version has been tested on Drupal 7, Drupal 8, Joomla 3.x, and Wordpress 3.9.x
+Occasionally during a CTF (or a pen test?) you might gain admin access to a CMS. In most configurations that gives you RCE. **cms2cmd** is a clean (i.e. no need to change templates or otherwise "break" the CMS instance) and simple command execution plugin that works for a number of various CMS systems (current version has been tested on Drupal 7, Drupal 8, Joomla 3.x, and Wordpress 3.9.x).
 
-Note: the same **mod_cmd.zip** file is recognized as a valid plugin by all the supported CMS systems.
+The same **mod_cmd.zip** file is recognized as a valid plugin by all the supported CMS systems. mod_cmd.zip is just a ZIP archive containing mod_cmd directory, you can create it yourself - see **build.sh**. **cms2cmd** will send a 404 HTTP response if called without providing a command to execute, which makes it *a bit* sneakier and safer in CTF type environment.
 
 # Usage
 ## Drupal 7

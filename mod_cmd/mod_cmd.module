@@ -1,5 +1,5 @@
 <?php
-
+// This file is used by Drupal 7
 function mod_cmd_menu() {
     $items['mod_cmd'] = array(
         'title' => 'mod_cmd',
