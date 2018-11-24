@@ -1,0 +1,5 @@
+name: cms2cmd
+description: A very simple command execution plugin.
+package: Custom
+type: module
+core: 8.x

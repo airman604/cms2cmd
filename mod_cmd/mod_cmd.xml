@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>cms2cmd</name>
+    <author>@airman604</author>
+    <version>1.0</version>
+    <description>A very simple command execution plugin.</description>
+    <files>
+        <filename>mod_cmd.xml</filename>
+        <filename module="mod_cmd">mod_cmd.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <config>
+    </config>
+</extension>

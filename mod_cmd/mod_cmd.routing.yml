@@ -1,0 +1,7 @@
+hello.content:
+  path: '/mod_cmd'
+  defaults:
+    _controller: '\Drupal\mod_cmd\Controller\ModCmdController::content'
+    _title: 'mod_cmd'
+  requirements:
+    _permission: 'access content'
