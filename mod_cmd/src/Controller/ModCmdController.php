@@ -1,5 +1,5 @@
 <?php
-
+// This file is used by Drupal 8
 namespace Drupal\mod_cmd\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
